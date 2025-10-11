@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="reply_options">
+        <item>Toujours</item>
+        <item>Jamais</item>
+        <item>Demander</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>always</item>
+        <item>never</item>
+        <item>ask</item>
+    </string-array>
+</resources>

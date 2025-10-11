@@ -1,0 +1,62 @@
+<resources>
+
+        <string name="app_name">EventConnect</string>
+
+        <!-- Fragment Create Event -->
+        <string name="hint_title">Titre de l\'événement</string>
+        <string name="hint_description">Description</string>
+        <string name="hint_date">Date</string>
+        <string name="hint_location">Lieu</string>
+        <string name="btn_gallery">Galerie</string>
+        <string name="btn_camera">Caméra</string>
+        <string name="btn_save">Créer l\'événement</string>
+        <string name="btn_select_location">Selectionner</string>
+        <string name="btn_add_image">Ajouter une image</string>
+
+        <!-- Messages -->
+        <string name="error_fill_fields">Veuillez remplir tous les champs</string>
+        <string name="success_event_created">Événement créé avec succès 🎉</string>
+        <string name="error_camera_permission">Permission caméra refusée</string>
+        <string name="dialog_select_image_title">Sélectionner une image</string>
+        <string name="option_gallery">Galerie</string>
+        <string name="option_camera">Caméra</string>
+        <string name="event_image">image de l\'événement</string>
+        <string name="event_organizer">Organisateur</string>
+
+        <!-- Boutons -->
+        <string name="participate">Participer</string>
+        <string name="cancel_participation">Annuler</string>
+        <string name="share">Partager</string>
+        <string name="open_map">Voir sur la carte</string>
+        <string name="share_event_chooser">Partager l\'événement</string>
+
+    <string name="home_title">Événements</string>
+    <string name="filter_category">Filtrer par catégorie</string>
+    <string name="loading">Chargement...</string>
+    <string name="no_events">Aucun événement disponible</string>
+
+    <!-- Catégories -->
+    <string name="category">catégories</string>
+    <string name="category_music">Musique</string>
+    <string name="category_sport">Sport</string>
+    <string name="category_conference">Conférence</string>
+    <string name="category_festival">Festival</string>
+    <string name="category_other">Autre</string>
+
+    <string name="favorite_cat">Categories favorites</string>
+    <string name="delete_all">Effacer toutes les données</string>
+    <string name="black_theme">Activer le mode sombre</string>
+        <!-- Navigation -->
+        <string name="nav_home">Accueil</string>
+        <string name="nav_settings">Paramètres</string>
+
+        <!-- Preferences -->
+        <string name="messages_header">Messages</string>
+        <string name="signature_title">Signature</string>
+        <string name="reply_title">Réponse rapide</string>
+        <string name="sync_header">Synchronisation</string>
+        <string name="sync_title">Sync automatique</string>
+        <string name="attachment_title">Téléchargement pièces jointes</string>
+
+
+</resources>

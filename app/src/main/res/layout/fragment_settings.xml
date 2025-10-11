@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Switch Material -->
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switchDarkTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/black_theme"
+        style="@style/Widget.Material3.CompoundButton.MaterialSwitch" />
+
+    <!-- Bouton pour effacer les données -->
+    <Button
+        android:id="@+id/buttonClearData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_all"
+        android:layout_marginTop="16dp" />
+
+    <!-- Zone de texte -->
+    <TextView
+        android:id="@+id/textCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/favorite_cat"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Conteneur pour les catégories -->
+    <LinearLayout
+        android:id="@+id/containerCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp" />
+
+</LinearLayout>

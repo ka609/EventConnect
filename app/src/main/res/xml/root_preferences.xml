@@ -1,0 +1,37 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/messages_header">
+
+        <androidx.preference.EditTextPreference
+            android:key="signature"
+            android:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <androidx.preference.ListPreference
+            android:key="reply"
+            android:title="@string/reply_title"
+            android:entries="@array/reply_options"
+            android:entryValues="@array/reply_values"
+            app:useSimpleSummaryProvider="true" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/sync_header">
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="sync"
+            android:title="@string/sync_title"
+            android:defaultValue="true" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="attachment"
+            android:title="@string/attachment_title"
+            android:summaryOn="Les pièces jointes seront téléchargées"
+            android:summaryOff="Les pièces jointes ne seront pas téléchargées"
+            android:dependency="sync" />
+
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>
