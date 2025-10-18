@@ -35,6 +35,15 @@ class EventRepository(
         val entity = event.toEventEntity()
         eventDao.insertEvent(entity)
     }
+    suspend fun isUserParticipating(eventId: String): Boolean {
+        // TODO: implémenter la vérification de la participation
+        return false
+    }
+
+    suspend fun setParticipation(eventId: String, state: Boolean) {
+        // TODO: implémenter la mise à jour de participation
+    }
+
 
     // Extensions : conversion entre EventEntity et Event
     private fun EventEntity.toEvent(): Event {

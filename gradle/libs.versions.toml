@@ -1,10 +1,10 @@
 [versions]
 kotlin = "2.2.20"
-ksp = "2.2.10-2.0.2"
+ksp = "2.2.20-2.0.4"
 agp = "8.12.3"
 compose-bom = "2025.10.00"
 core-ktx = "1.17.0"
-lifecycle = "2.8.6"
+lifecycle = "2.9.4"
 activity = "1.11.0"
 appcompat = "1.7.1"
 material = "1.13.0"
@@ -18,14 +18,14 @@ room = "2.8.2"
 retrofit = "3.0.0"
 gson = "2.13.2"
 annotation = "1.9.1"
-lifecycle-livedata-ktx = "2.8.6"
-lifecycle-viewmodel-ktx = "2.8.6"
-navigation = "2.9.5"
-fragment = "1.8.9"
-hilt = "2.57.2"
+lifecycle-livedata-ktx = "2.9.4"
+lifecycle-viewmodel-ktx = "2.9.4"
 datastore = "1.1.7"
 preference = "1.2.1"
 glide = "5.0.5"
+hilt = "2.57.2"
+navigation = "2.9.5"
+fragment = "1.8.9"
 
 
 
@@ -35,6 +35,9 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize"}
+navigation-safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }
+
 
 [libraries]
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment" }

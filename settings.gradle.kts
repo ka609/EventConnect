@@ -4,15 +4,24 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+    plugins {
+
+        id("org.jetbrains.kotlin.android") version "2.2.20"
+        id("org.jetbrains.kotlin.plugin.compose") version "2.2.20"
+        id("org.jetbrains.kotlin.plugin.parcelize") version "2.2.20"
+        id("com.google.devtools.ksp") version "2.2.20-2.0.4"
+        id("com.google.dagger.hilt.android") version "2.57.2"
+        id("com.android.application") version "8.12.3"
+    }
 }
 
 dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
     }
 }
-
 
 rootProject.name = "EventConnect"
 include(":app")

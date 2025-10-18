@@ -1,5 +1,7 @@
 package com.example.eventconnect.ui.create
 
+import android.widget.AdapterView
+import androidx.core.widget.addTextChangedListener
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
@@ -79,14 +81,14 @@ class CreateEventFragment : Fragment(), OnMapReadyCallback {
         // Créer événement
         binding.buttonCreateEvent.setOnClickListener { viewModel.createEvent() }
 
-        binding.etTitle.addTextChangedListener {
-            viewModel.updateTitle(it.toString())
+        binding.etTitle.addTextChangedListener {text->
+            viewModel.updateTitle(text.toString())
         }
-        binding.editTextDescription.addTextChangedListener {
-            viewModel.updateDescription(it.toString())
+        binding.editTextDescription.addTextChangedListener { text->
+            viewModel.updateDescription(text.toString())
         }
-        binding.editTextLocation.addTextChangedListener {
-            viewModel.updateLocation(it.toString())
+        binding.editTextLocation.addTextChangedListener {text ->
+            viewModel.updateLocation(text.toString())
         }
         binding.spinnerCategory.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
